@@ -17,6 +17,7 @@ def main():
     snowflake_username = os.environ['INPUT_SNOWFLAKE_USERNAME']
     snowflake_password = os.environ['INPUT_SNOWFLAKE_PASSWORD']
     snowflake_role = os.environ.get('INPUT_SNOWFLAKE_ROLE', '')
+    snowflake_region = os.environ['INPUT_SNOWFLAKE_REGION']
     
     with SnowflakeConnector(snowflake_account, snowflake_username, snowflake_password) as con:
         try:
