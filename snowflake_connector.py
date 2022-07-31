@@ -5,16 +5,18 @@ import snowflake.connector
 from snowflake.connector.constants import QueryStatus
 
 class SnowflakeConnector:
-    def __init__(self, account_name: str, username: str, password: str):
+    def __init__(self, account_name: str, username: str, password: str, region: str):
         self.account_name = account_name
         self.username = username
         self.password = password
+        self.region = region
 
     def __enter__(self):
         self.con = snowflake.connector.connect(
         user=self.username,
         password=self.password,
-        account=self.account_name)
+        account=self.account_name,
+        region=self.region)
 
         return self
 
