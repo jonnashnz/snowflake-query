@@ -1,4 +1,4 @@
-name: 'Snowflake Query Action'
+name: 'Snowflake Query Action With Region'
 author: 'anecdotes.ai'
 description: 'This action lets running a list of SQL queries on your Snowflake DB.'
 
