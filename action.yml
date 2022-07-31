@@ -19,6 +19,9 @@ inputs:
   snowflake_warehouse:
     description: 'Warehouse as context'
     required: true
+  snowflake_region:
+    description: 'Account region'
+    required: true
   snowflake_role:
     description: 'Set user role'
     required: false
